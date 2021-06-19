@@ -1,83 +1,87 @@
-function akanName(){
-    var yob = document.getElementById("yob").value;
-    var month = document.getElementById("bornmonth").value;
-    var day = document.getElementById("bornday").value;
-    var theName;
-    var indexNumber;
+function myFunction(){
+    var customerName = document.getElementById("nameInput").value;
+    var customerEmail = document.getElementById("emailInput").value;
+    var customerComments = document.getElementById("commentsInput").value;
 
-    var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var siku = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-    if (month <= 0 || month > 12){
-    alert("Please give a month between 1 and 12");
-    process.exit();
-    } 
-    if (day <= 0 || day > 31){
-    alert("Please give a better dates ranging from 1 to 31!!");
-    process.exit();
-    } 
-
-    var cc = parseInt(yob/100);
-    var yy = parseInt(yob % 100);
-    var mm = parseInt(month);
-    var dd = parseInt(day);
-
-    indexNumber = (((cc / 4) - 2 * cc - 1 ) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7;
-
-    var indexNum = parseInt(indexNumber);
-
-    if (document.getElementById("maleselect").checked == true){
-        document.getElementById("femaleselect").checked == false;
-        if(indexNum === 0){
-            theName = maleNames[0];
-        }
-        else if(indexNum === 1){
-            theName = maleNames[1];
-        }
-        else if(indexNum === 2){
-            theName = maleNames[2];
-        }
-        else if(indexNum === 3){
-            theName = maleNames[3];
-        }
-        else if(indexNum === 4){
-            theName = maleNames[4];
-        }
-        else if(indexNum === 5){
-            theName = maleNames[5];
-        }
-        else if(indexNum === 6){
-            theName = maleNames[6];
-        }
-
-    } else {
-        if(indexNum === 0){
-            theName = femaleNames[0];
-        }
-        else if(indexNum === 1){
-            theName = femaleNames[1];
-        }
-        else if(indexNum === 2){
-            theName = femaleNames[2];
-        }
-        else if(indexNum === 3){
-            theName = femaleNames[3];
-        }
-        else if(indexNum === 4){
-            theName = femaleNames[4];
-        }
-        else if(indexNum === 5){
-            theName = femaleNames[5];
-        }
-        else if(indexNum === 6){
-            theName = femaleNames[6];
-        }
+    if (customerName === "" || customerEmail  === "" || customerComments === ""){
+        alert("Please complete all sections of the form");
+    } else{
+    alert (customerName + " we have received your message. Thank you for reaching out to us.")
+    document.getElementById("collection").submit();
     }
-
-    document.getElementById("akanname").innerHTML="Your birthday is: " + day + "/" + month + "/" + yob + " and you were born on a " + siku[indexNum] + 
-    ". Finally, your Akan name is " + theName;
-    alert("your name is " + theName);
 }
 
+$(document).ready(function(){
+    $("#design").click(function(){
+        $(".designShowing").toggle();
+        $(".designHidden").toggle();
+    });
+});
 
+$(document).ready(function(){
+    $("#development").click(function(){
+        $(".developmentShowing").toggle();
+        $(".developmentHidden").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#prodmanagement").click(function(){
+        $(".prodShowing").toggle();
+        $(".prodHidden").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work1 img").hover(function(){
+        $(".center1").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work2 img").hover(function(){
+        $(".center2").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work3 img").hover(function(){
+        $(".center3").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work4 img").hover(function(){
+        $(".center4").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work5 img").hover(function(){
+        $(".center5").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work6 img").hover(function(){
+        $(".center6").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work7 img").hover(function(){
+        $(".center7").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#work8 img").hover(function(){
+        $(".center8").toggle();
+    });
+});
+
+$(document).ready(function(){
+    $("#contactus").hover(function(){
+        $("#submission").toggle();
+    });
+});

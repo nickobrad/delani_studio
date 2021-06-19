@@ -2,8 +2,7 @@
 ## Author
 Nicholas Omondi
 ## Description
-This is a website that displays your Akan name based off your birthday. All your details are taken in by a form and on  the click 
-of a button you see your new name
+This is a website that displays Delani Studios work and explaims what they do as a company
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
@@ -11,23 +10,19 @@ You can install it with the following command in your terminal
 ### Setup
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
-2. Use this command to clone `$ git clone https://github.com/nickobrad/akan_name
+2. Use this command to clone `$ git clone https://github.com/nickobrad/delani_studio
 3. This will clone the repositoty into your local folder
 4. Thank you.
 ### BDD
-As a user, I would like to;
-
-1. See a  small description of what the application does on the landing page.
-2. Enter my birthday through a form 
-3. Choose what gender I am.
-4. Click the submit button to see what my Akan name would be
-
+1. The 'What We Do' icons toogle to show a description when clicked
+2. A hover effect is used on the portfolio to show the name of the project
+3. Pop up message appears when a user fills in their details
 ### Technologies Used
 1. HTML
 2. CSS
 3. Bootstrap
 4. Git
 ### Live Site
-View [live](https://nickobrad.github.io/akan_name/)
+View [live](https://nickobrad.github.io/delani_studio/)
 ### Licence
 This project is under the  [MIT](LICENSE) license

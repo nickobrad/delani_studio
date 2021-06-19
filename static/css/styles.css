@@ -1,0 +1,200 @@
+html, body{
+    height: 100%;
+}
+#bigLandingPage{
+    height: 80%;
+    background-image: url(/static/images/backgrounds/h_img.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#landingpage{
+    height: 750px;
+    width: 100%;
+}
+.landingpage{
+    height:80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.welcome{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mouselogo{
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bigAboutUs{
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#aboutus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#aboutus{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 70%;
+}
+
+#servicesmain{
+    background-image: url(/static/images/backgrounds/s_image.jpg);
+    padding: 50px 0px;
+}
+#services{
+    color: white;
+    height:40%;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.whatwedo{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.designHidden, .developmentHidden, .prodHidden{
+    display: none;
+}
+
+#portfolio{
+    width:100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#row1, #row2{
+    width: 70%;
+}
+#work1, #work2, #work3, #work4, #work5, #work6, #work7, #work8{
+    padding:5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.center1, .center2, .center3, .center4, .center5, .center6, .center7, .center8 {
+    /* background-color: white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    text-align: center;
+    color: white;
+}
+#work1 img:hover, #work2 img:hover, #work3 img:hover, #work4 img:hover, #work5 img:hover, #work6 img:hover, #work7 img:hover, #work8 img:hover{
+    filter: blur(4px);
+}
+
+#contactus{
+    background-image: url(/static/images/backgrounds/c_image.jpg);
+    height:500px;
+    color:white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+#collection{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nameandemail{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#name, #email{
+    width: 50%;
+}
+#nameInput, #emailInput{
+    color: white;
+    background-color: transparent;
+}
+#bigComments{
+    width: 100%;
+    height: 80%;
+}
+#comments{
+    width: 100%;
+}
+#commentsInput{
+    background-color: transparent;
+    width: 100%;
+    height:100%;  
+}
+#submitButton{
+    color: white;
+    background-color: transparent;
+}
+#submission{
+    color: white;
+    display: none;
+    /* background-color: transparent; */
+
+}
+#socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#smc{
+   padding: 30px 5px;
+   width:max-content;
+}
+#smc img{
+    max-width: 100%;
+}
+
+::placeholder{
+    color: white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:white;
+}
+   
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:white;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: red;
+  }
+
+
