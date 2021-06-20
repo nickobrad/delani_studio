@@ -74,7 +74,7 @@ html, body{
 .whatwedo{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .designHidden, .developmentHidden, .prodHidden{
     display: none;
@@ -87,7 +87,6 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content:space-between;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 #row1, #row2{
@@ -103,13 +102,15 @@ html, body{
 }
 .center1, .center2, .center3, .center4, .center5, .center6, .center7, .center8 {
     /* background-color: white; */
+    color: white;
+    border: solid 1px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: none;
     text-align: center;
-    color: white;
+    padding: 5px 5px;
 }
 #work1 img:hover, #work2 img:hover, #work3 img:hover, #work4 img:hover, #work5 img:hover, #work6 img:hover, #work7 img:hover, #work8 img:hover{
     filter: blur(4px);
@@ -183,7 +184,7 @@ html, body{
     max-width: 100%;
 }
 
-::placeholder{
+input::placeholder{
     color: white;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
