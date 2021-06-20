@@ -3,7 +3,7 @@ html, body{
 }
 #bigLandingPage{
     height: 80%;
-    background-image: url(/static/images/backgrounds/h_img.jpg);
+    background-image: url(../images/h_img.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +55,7 @@ html, body{
 }
 
 #servicesmain{
-    background-image: url(/static/images/backgrounds/s_image.jpg);
+    background-image: url(../images/s_image.jpg);
     padding: 50px 0px;
 }
 #services{
@@ -117,7 +117,7 @@ html, body{
 }
 
 #contactus{
-    background-image: url(/static/images/backgrounds/c_image.jpg);
+    background-image: url(../images/c_image.jpg);
     height:500px;
     color:white;
     text-align: center;
