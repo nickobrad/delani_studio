@@ -1,4 +1,4 @@
-# Akan Name
+# DELANI STUDIO
 ## Author
 Nicholas Omondi
 ## Description
